@@ -12,3 +12,10 @@ In order to use the application , please click on the URL below.
 
 The application asks the user if they want to initiate or join a call in the landing page. An initiator of the call is asked to enter a username which serves as a unique authentication factor. The joiner has to use the same username to join the call. Once both the parties enter the call they can chat and have a video call. A mute audio , mute video functionality is also present .
    
+## Implementation of the central theme - Agile methodology 
+
+Used agile scrum methodology to solve the challenge. Divided the problem statements into various deliverables , each to be met in a sprint.
+
+Sprint 1 --  Design : Used wireframes to design the application 
+Sprint 2 --  Build : Used the WebRTC API's for the video calling application 
+Sprint 3 --  Adapt : Incorporated the surprise feature 
