@@ -1,5 +1,5 @@
 # Microsoft TEAMS clone challenge
-This is a video conferencing application , made using WebRTC
+This is a video conferencing application , made using WebRTC.
 In order to use the application , please click on the URL below.
 
 ## Components of the application 
