@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+        <link rel="stylesheet" href="../style.css">
+    </head>
+    <body>
+        <div class="fields">
+            <div class="filedsLeft">
+                <img src="../images/login.jpg"/>
+            </div>
+            <div class="filedsRight">
+                <div class="textbox">
+                    <label>Enter Username</label>
+                    <input placeholder="Enter username..."
+                    type="text"
+                    id="username-input" />
+                </div>
+                <div class="btnGrp">
+                      <button onclick="sendUsername()" id="sendBtn">
+                        <span><img src="../images/send.png"></span> Send
+                    </button>
+                      <button onclick="startCall()" id="startCall">
+                        <span><img src="../images/phone.png"></span> Start Call
+                    </button>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="video-call-div">
+            <div class="videoCallCard">
+                <div class="videoBlockLeft">
+                    <label>User 1</label>
+                    <video muted id="local-video" autoplay></video>
+                    <div class="call-action-div">
+                        <div class="callMuteBtnGrp">
+                            <button onclick="muteVideo()" id="muteVideo">
+                                <span><img src="../images/video.png"></span> Mute Video</button>
+                            <button onclick="muteAudio()" id="muteAudio">
+                                <span><img src="../images/mick.png"></span> Mute Audio</button>  
+                        </div>
+                        <!-- <button onclick="muteVideo()" id="muteVideo">Mute Video</button>
+                        <button onclick="muteAudio()" id="muteAudio">Mute Audio</button> -->
+                        <div class="messageCardBlock">
+                            <textarea id="senderMessageId" rows="3" placeholder="Send Message"></textarea>
+                            <button class="btnSendMessage" onclick="recivReceiverMessage()">Send</button>
+                        </div>
+                        <p id="senderReceiveMessageId">Message</p>
+                    </div>
+                </div>
+                <div class="videoBlockRight">
+                    <label>User 2</label>
+                    <video id="remote-video" autoplay></video>
+                    <div class="call-action-div-dummy-height">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./sender.js"></script>
+    </body>
+
+</html>

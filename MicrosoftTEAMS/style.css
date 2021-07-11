@@ -1,0 +1,281 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+.fields {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.filedsLeft {
+    width: 60%;
+    float: left;
+    display: flex;
+    height: 100%;
+}
+.filedsLeft img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.filedsRight {
+    width: 40%;
+    float: left;
+}
+.fields .textbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.fields .textbox label {
+    font-size: 16px;
+    margin: 0px 5px;
+    color: #000;
+    font-family: sans-serif;
+    margin-left: -210px;
+}
+.fields .btnGrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .fields {
+    padding: 12px 12px;
+} */
+.fields #username-input{
+    padding: 5px 5px;
+    border: 1px solid #2292d0;
+    font-size: 16px;
+    width: 320px;
+    margin: 5px;
+    color: #000;
+    border-radius: 2px;
+    height: 28px;
+}
+.fields #username-input:focus-visible {
+    border: 1px solid #000;
+    border-radius: 2px;
+    outline: 0px;
+}
+#joinCall, #startCall {
+    padding: 6px 15px;
+    font-size: 16px;
+    margin: 5px 5px;
+    background: #2292d0;
+    border: 1px solid #2292d0;
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+    min-width: 135px;
+}
+#joinCall:hover, #startCall:hover{
+    background: #076598;
+    color: #fff;
+}
+#joinCall span, #startCall span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 2px 0px 0px;
+}
+#joinCall span img, #startCall span img{
+    width: 100%;
+    height: auto;
+}
+#sendBtn {
+    padding: 6px 15px;
+    font-size: 16px;
+    margin: 5px 5px;
+    background: #8bc34a;
+    border: 1px solid #8bc34a;
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 0px 0px 5px rgb(221, 181, 181);
+    cursor: pointer;
+    min-width: 135px;
+}
+#sendBtn:hover{
+    background: #61a514;
+    color: #fff;
+}
+#sendBtn span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 2px 0px 0px;
+}
+#sendBtn span img{
+    width: 100%;
+    height: auto;
+}
+.call-action-div {
+    margin-top: 18px;
+}
+#muteVideo, #muteAudio {
+    padding: 4px 10px;
+    font-size: 16px;
+    margin: 5px 5px;
+    background: #607d8b;
+    border: 1px solid #607d8b;
+    border-radius: 2px;
+    color: #fff;
+    box-shadow: 0px 0px 5px rgb(221, 181, 181);
+    cursor: pointer;
+    min-width: 135px;
+}
+#muteVideo span, #muteAudio span {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 4px 0px 0px;
+}
+#muteVideo span img, #muteAudio span img {
+    width: 100%;
+    height: auto;
+}
+#muteVideo:hover, #muteAudio:hover {
+    background: #4f5b61;
+    color: #fff;
+}.call-action-div-dummy-height {
+    height: 155px;
+}
+#video-call-div{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: #fff;
+}
+.videoCallCard {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: space-around;
+}
+.videoBlockLeft, .videoBlockRight {
+    display: flex;
+    text-align: CENTER;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.videoBlockLeft label {
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    background: #4caf50;
+    padding: 5px 30px;
+    margin: 0px 0px 15px 0px;
+    font-family: sans-serif;
+    border: 1px solid #4caf50;
+    border-radius: 2px;
+}
+.fields .homepageBtnGrp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.homePageBtns{
+    padding: 6px 15px;
+    font-size: 24px;
+    margin: 12px 5px;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 0px 0px 5px #ccc;
+    cursor: pointer;
+    min-width: 180px;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.homePageBtns.homePageBtnsRec {
+    background: #2292d0;
+    border: 1px solid #2292d0;
+}
+.homePageBtns.homePageBtnsRec:hover {
+    background: #076598;
+    border: 1px solid #076598;
+}
+.homePageBtns.homePageBtnsSen {
+    background: #8bc34a;
+    border: 1px solid #8bc34a;
+}
+.homePageBtns.homePageBtnsSen:hover {
+    background: #61a514;
+    border: 1px solid #61a514;
+}
+.homePageBtns span{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px 2px 0px 0px;
+}
+.homePageBtns span img{
+    width: 100%;
+    height: auto;
+}
+.messageCardBlock {
+    margin: 8px 0px;
+    width: 100%;
+    padding: 0px 5px;
+    display: flex;
+}
+.messageCardBlock textarea{
+    border: 1px solid #5ab55e;
+    width: 70%;
+    float: left;
+    border-radius: 0px;
+    resize: none;
+}
+.messageCardBlock .btnSendMessage{
+    font-size: 16px;
+    background: #5ab55e;
+    color: #fff;
+    border: 1px solid #5ab55e;
+    border-radius: 0px;
+    padding: 2px 8px;
+    float: right;
+    width: 25%;
+    cursor: pointer;
+}
+.messageCardBlock .btnSendMessage:hover {
+    border: 1px solid #4caf50;
+    background: #4caf50;
+}
+.messageCardBlock textarea:focus-visible {
+    border: 1px solid #000;
+    border-radius: 0px;
+    outline: 0px;
+}
+#local-video{
+    width: 80%;
+    border-radius: 25px;
+    border: 2px solid #4caf50;
+}
+.videoBlockRight label {
+    color: #fff;
+    font-size: 22px;
+    display: inline-block;
+    background: #2196f3;
+    padding: 5px 30px;
+    margin: 0px 0px 15px 0px;
+    font-family: sans-serif;
+    border: 1px solid #2196f3;
+    border-radius: 2px;
+}
+.videoBlockRight #remote-video{
+    width: 80%;
+    border-radius: 25px;
+    border: 2px solid #2196f3;
+}
