@@ -16,6 +16,6 @@ The application asks the user if they want to initiate or join a call in the lan
 
 Used agile scrum methodology to solve the challenge. Divided the problem statements into various deliverables , each to be met in a sprint.
 
-Sprint 1 --  Design : Used wireframes to design the application 
-Sprint 2 --  Build : Used the WebRTC API's for the video calling application 
-Sprint 3 --  Adapt : Incorporated the surprise feature 
+1. Sprint 1 --  Design : Used wireframes to design the application 
+2. Sprint 2 --  Build : Used the WebRTC API's for the video calling application 
+3. Sprint 3 --  Adapt : Incorporated the surprise feature 
